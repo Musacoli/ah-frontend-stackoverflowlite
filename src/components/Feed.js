@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { loadQuestions } from '../actions/actions';
-import questions from '../reducers/questions';
+import { loadQuestions } from '../store/actions/actions';
 
 const mapStateToProps = state => {
   return {
       questions: state.questions.questions
   }
 }
-
-console.log(questions);
 
 class Feed extends Component {
   componentWillReceiveProps(nextProps) {
@@ -20,13 +17,18 @@ class Feed extends Component {
       this.props.loadQuestions()
   }
   
+
   render() {
-  const questions = this.props.questions.reverse().map((question)=>
+
+    const question = this.props.questions 
+    // const quest = question
+      console.log(question);
+  return (
               <div className="post-panel">
                   <div className="post-metadata">
                       <div className="post-info">
                           <div data-react-className="PopoverLink">
-                          <span className="popover-link" data-reactroot=""><a href={`/profile/${question.author._id}`}>{question.username}</a></span></div>
+                          <span className="popover-link" data-reactroot=""><a href={`/profile/`}>{question.username}</a></span></div>
                           <small>Posted at • {question.post_time}</small>
                       </div>
                   </div>
@@ -55,17 +57,6 @@ class Feed extends Component {
                     </div>
                 </div>
             )
-        return ( 
-            <div>
-                <div className="container-fluid main-container">
-                    <div className="col-md-6 col-md-offset-1 dashboard-main-content">
-                        <div className="posts-wrapper animated fadeInUp" data-behavior="endless-scroll" data-animation="fadeInUp-fadeOutDown">
-                            {questions}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        );
     }
 }
 export default connect(mapStateToProps, { loadQuestions })(Feed);

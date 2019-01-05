@@ -1,13 +1,15 @@
 import { combineReducers } from 'redux';
 import questions from './questions';
-import authUser from './authUser';
 import common from './common';
-import { routerReducer } from 'react-router-redux'
+import authentication from './authentication';
+import forms from './forms';
+import { routerReducer } from 'react-router-redux';
 
 
 export default combineReducers({
   questions,
-  authUser,
+  authentication,
+  forms,
   common,
   router: routerReducer
 });

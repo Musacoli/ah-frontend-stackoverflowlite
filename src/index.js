@@ -22,7 +22,10 @@ import './assets/index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { getUser } from './actions/actions'
+import { getUser } from './store/actions/actions'
+import ErrorBoundary from './components/ErrorBoundary';
+
+import './sass/app.scss';
 
 if(localStorage.Auth) {
   store.dispatch({type: 'SET_USER', user: JSON.parse(localStorage.Auth)})
@@ -36,7 +39,9 @@ ReactDOM.render(
   <Provider store={store}>
       <BrowserRouter>
         <Switch>
+        <ErrorBoundary>
           <Route path="/" component={App} />
+        </ErrorBoundary>
         </Switch>
       </BrowserRouter>
   </Provider>,

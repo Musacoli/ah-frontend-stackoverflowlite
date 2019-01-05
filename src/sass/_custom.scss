@@ -1,0 +1,74 @@
+.navbar {
+  border-top: 3px solid $accent;
+  .navbar-brand {
+    img {
+      height: 70px;
+    }
+  }
+}
+
+.card {
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.302), 0 1px 1px 1px rgba(60, 64, 67, 0.149);
+}
+svg {
+  fill: currentColor;
+}
+.btn {
+  svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-bottom: 5px;
+  }
+}
+.btn-link {
+  border: none;
+  color: currentColor;
+  background-color: transparent;
+  &:active {
+    outline: none;
+  }
+  &:hover {
+    cursor: pointer;
+    outline: none;
+  }
+}
+.user-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  svg {
+    height: 1rem;
+    width: 1rem;
+    fill: currentColor;
+  }
+}
+label.has-input {
+  width: 100%;
+}
+
+.nav-link {
+  .nav-link-icon {
+    height: inherit;
+    width: inherit;
+    margin-bottom: -15px;
+  }
+}
+
+.card {
+  .card {
+    box-shadow: none;
+    border-left: none;
+    border-right: none;
+  }
+}
+
+.UnBookMarkIcon {
+  svg {
+    fill: gray;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+

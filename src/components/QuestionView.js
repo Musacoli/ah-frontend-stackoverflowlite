@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { getQuestion } from '../actions/actions'
+import { getQuestion } from '../store/actions/actions'
 import PropTypes from 'prop-types'
 
 const mapStateToProps = state => {
     return {
-        _question: state.questions.question,
-        user: state.authUser.user    
+        _question: state.questions.question,   
     }
 }
 

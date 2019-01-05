@@ -6,6 +6,10 @@ StackOverflow lite is a platform where users are able to ask questions, receive 
 
 This repo contains the front end implementation. **The backend can be found [here](https://github.com/Musacoli/StackOverflow-lite/tree/test_app)**
 
+##Viewing Web Application
+
+Visit the following link to view the React Application in action: [Here](https://stackoverflowlite-odin.herokuapp.com)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.

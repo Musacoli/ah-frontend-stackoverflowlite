@@ -1,0 +1,21 @@
+/**
+ * Pull in the bootstrap variables and function utilities 
+ * so that we can overide some of them
+ */
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+/**
+ * Bootstrap has alot of theme colors, most of which we won't need
+ * We will only use a few to keep the bundle size minimal
+ */
+$theme-colors: (
+  'primary': $primary,
+  'accent': $accent,
+  'dark': $dark,
+  'light': $light,
+  'danger': $danger,
+  'info': $info
+);
+

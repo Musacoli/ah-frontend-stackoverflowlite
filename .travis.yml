@@ -9,5 +9,6 @@ script:
   - yarn
   - yarn add coveralls
   - yarn test -- -u --coverage 
+  - jest --maxWorkers=2
 after_success:
   - npm run coveralls

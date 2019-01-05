@@ -1,0 +1,45 @@
+/**
+ * fonts
+ */
+$font-family-base: 'Open Sans', sans-serif !default;
+
+$headings-font-family: 'Exo 2', sans-serif !default;
+
+/**
+ * Turn off the rounded corners for all the components
+ */
+$border-radius: 0 !default;
+$border-radius-lg: 0 !default;
+$border-radius-sm: 0 !default;
+
+/**
+ * Specify our color system here
+ */
+
+$primary: #264c55;
+$primary_light: #2e5b66;
+$primary_dark: #1e3d44;
+$black: #171a1b;
+$dark: #2f3739;
+$light: #fff;
+$white: #f8f9f9;
+
+$accent: #dd9d45;
+/**
+ * Typography and fonts
+ * @see http://type-scale.com/ 
+ */
+$font-size-base: 1.1rem !default;
+
+$h1-font-size: 3.998rem !default;
+$h2-font-size: 2.827rem !default;
+$h3-font-size: 1.999rem !default;
+$h4-font-size: 1.414rem !default;
+$small-font-size: 0.707rem;
+
+/**
+ * body color
+ */
+$body-bg: #fff !default;
+
+$card-bg: #fff !default;
